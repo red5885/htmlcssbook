@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: html css tutorial",
+            "name": "html css tutorial",
             "type": "python",
             "request": "launch",
             "module": "flask",
