@@ -1,16 +1,19 @@
 from flask import Flask,render_template
-from pages.views import *
-
-def create_app():
-    app = Flask(__name__)
-    app.confit.from_pyfile('config.cfg')
-
-    #TODO started converting examples to a bluepring.
-    app.add_url_rule('index')
-
-app = Flask(__name__)
-app.config.from_pyfile('config.cfg')
+import pages
 
 def index():
     pages = ['p20', 'p27']
     return render_template('index.html', pages = pages)
+
+def create_app():
+    app = Flask(__name__)
+    app.config.from_pyfile('config.cfg')
+
+    app.register_blueprint(pages.bp)
+    app.add_url_rule('/', 'index', index)
+    return app
+
+
+if (__name__ == '__main__'):
+    app = create_app()
+    app.run()
