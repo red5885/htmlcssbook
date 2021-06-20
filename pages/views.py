@@ -8,3 +8,6 @@ def p27():
 
 def p58():
     return render_template('p58.html')
+
+def p140():
+    return render_template('p140.html')

@@ -2,7 +2,7 @@ from flask import Flask,render_template
 import pages
 
 def index():
-    links = ['p20', 'p27', 'p58']
+    links = ['p20', 'p27', 'p58', 'p140']
     return render_template('index.html', pages = links)
 
 def create_app():
