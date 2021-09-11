@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Using CSS{% endblock %}
+
+{% block head %}
+<link href="/static/css/styles.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<h1>This is a heading!</h1>
+<p>
+    This is a paragraph with some
+    text that is <em>emphasized</em>
+    and <b>bold</b>.
+</p>
+<p>
+    This includes some more styles like 
+    <i>italics</i> and <u>underlined</u>.
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PQHPYelqr0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endblock %}
