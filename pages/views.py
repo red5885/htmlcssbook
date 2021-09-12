@@ -5,3 +5,15 @@ def p20():
 
 def p27():
     return render_template('p27.html')
+
+def p58():
+    return render_template('p58.html')
+
+def p140():
+    return render_template('p140.html')
+
+def p171():
+    return render_template('p171.html')
+
+def css():
+    return render_template('example.html')
